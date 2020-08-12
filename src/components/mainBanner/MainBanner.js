@@ -11,10 +11,10 @@ export function MainBanner() {
     return (
         <Jumbotron className="justify-content-center">
             <Row className="mx-auto container">
-                <Col>
+                <Col className="text-left">
                     <h1>Are you a student hoping to learn more about investing?</h1>
                     <p>Create a student account today and get access to the latest business news, current stock market trends, free articles and courses, as well as build your own personalized portfolio!</p>
-                    <Button bg="red">Learn More</Button>
+                    <Button>Learn More</Button>
                 </Col>
                 <Col>
                     <img src={graphpic} alt="Invest Today!"></img>

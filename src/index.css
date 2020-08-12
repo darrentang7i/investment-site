@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --main-color: #ED111B; 
+  --secondary-color: #D9D9D9
 }
 
 code {
@@ -13,5 +15,22 @@ code {
 }
 
 .navbar {
-  background-color: #ED111B
+  background-color: var(--main-color)
+}
+
+.nav-link {
+  color: white!important
+}
+
+.btn, .btn-primary {
+  background-color: var(--main-color) !important;
+}
+
+.card {
+  text-align: left;
+  background-color: var(--secondary-color) !important;
+}
+
+.jumbotron {
+  background-color: var(--secondary-color) !important;
 }
