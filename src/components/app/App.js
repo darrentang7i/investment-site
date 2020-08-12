@@ -1,35 +1,43 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Navbar, Nav } from 'react-bootstrap'
+import { Switch, Route, Link } from 'react-router-dom'
+import scotia from './scotia.svg'
 
 import { MainPage } from '../mainPage/MainPage'
 import { QuizPage } from '../quizPage/QuizPage'
-import HomeButton from './Test.js'
+
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <ul>
-          <li>
-            <Link to="/MainPage">Main Page</Link>
-          </li>
-          <li>
-            <Link to="/QuizPage">Main Page</Link>
-          </li>
-        </ul>
-        <Switch>
-          <Route path="/MainPage">
-            <MainPage/>
-          </Route>
-          <Route path="/QuizPage">
-            <QuizPage/>
-          </Route>
-        </Switch>
-      </Router>
+      <Link to='/'><img className="d-flex" src={scotia} alt="Logo"></img></Link>
+      <Navbar className="navbar" expand="lg">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="justify-content-around bg-transparent w-100">
+            <Nav.Link as={Link} to="/">Interactive Quiz</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">My Dashboard</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">My Dashboard</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">Expert Blogs</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">iTRADE</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      <Switch>
+        <Route path="/quiz">
+          <QuizPage />
+        </Route>
+        <Route path="/">
+          <MainPage />
+        </Route>
+      </Switch>
     </div>
-  );
+  )
 }
 
 export default App;
