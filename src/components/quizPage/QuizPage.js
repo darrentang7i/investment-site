@@ -1,56 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './QuizPage.css'
 import Button from 'react-bootstrap/Button';
+import Form from "react-bootstrap/Form";
+import Media from 'react-bootstrap/Media'
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Container from 'react-bootstrap/Container'
 
 export function QuizPage() {
-    // const [show, toggleShow] = useState(true);
+    const [show, toggleShow] = useState(true);
 
     // function startQuiz (){
 
     // }
 
-    // return (
-    //     <div id="header">
-    //         <Button onClick={() => toggleShow(true)}>Show Toast</Button>}
-    //         <p>Find out the best options for you!</p>
-    //         <button onClick={this.handleClick}>
+    return (
+        <div id="header">
+            <Container fluid className="p-5" >
+                <div id="quiz-title"> Interactive Quiz</div>
+                <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
+            </Container >
+            <Form>
+                {['checkbox', 'radio'].map((type) => (
+                    <div key={`default-${type}`} className="mb-3">
+                    <Form.Check 
+                        type={type}
+                        id={`default-${type}`}
+                        label={`default ${type}`}
+                    />
 
-    //         </button>
+                    {/* <Form.Check
+                        disabled
+                        type={type}
+                        label={`disabled ${type}`}
+                        id={`disabled-default-${type}`}
+                    /> */}
+                    </div>
+                ))}
+             </Form>
 
-    //     </div>
-    // )
-
-  return (
-    <div>
-      {/* Default unchecked */}
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-        <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
-      </div>
-
-      {/* Default checked */}
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultChecked" checked>
-        <label class="custom-control-label" for="defaultChecked">Default checked</label>
-      </div>
-
-      {/* Default indeterminate */}
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultIndeterminate" checked>
-        <label class="custom-control-label" for="defaultIndeterminate">Default indeterminate</label>
-      </div>
-
-      {/* Default unchecked disabled */}
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultUncheckedDisabled" disabled>
-        <label class="custom-control-label" for="defaultUncheckedDisabled">Default unchecked disabled</label>
-      </div>
-
-      {/* Default checked disabled */}
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultCheckedDisabled" checked disabled>
-        <label class="custom-control-label" for="defaultCheckedDisabled">Default checked disabled</label>
-      </div>
-    </div>
-  )
+        </div>
+        
+    )
 }

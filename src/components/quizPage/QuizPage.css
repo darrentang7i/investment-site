@@ -1,0 +1,11 @@
+.container-fluid{
+    background-color: #ED111B !important;
+    color: white;
+    text-align: left;
+
+}
+
+#quiz-title {
+    font-size: 28px;
+    font-weight: bold;
+}
