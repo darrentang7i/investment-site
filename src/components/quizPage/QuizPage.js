@@ -6,16 +6,25 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 export class QuizPage extends React.Component {
+    // const [show, toggleShow] = useState(true);
+
+
+    onCheck(){
+        console.log("checkmark");
+    }
+    // function startQuiz (){
+
+    // }
 
     change = (event) => {
         console.log("printing something")
     }
 
     render() {
-        return (
+        return(
             <div>
                 <div id="header">
-
+                    
                     <Container fluid className="p-5" >
                         <div id="quiz-title"> Interactive Quiz</div>
                         <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
@@ -29,7 +38,7 @@ export class QuizPage extends React.Component {
                             </Row>
 
                             {['$1000 in cash', '50% chance at winning $5000', '10% chance of winning $500,000'].map((response) => (
-                                <div className="options mb-3">
+                                <div key={response} className="options mb-3">
                                     <Form.Check
                                         custom
                                         type={'checkbox'}
