@@ -21,7 +21,7 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-around bg-transparent w-100">
-            <Nav.Link as={Link} to="/">Interactive Quiz</Nav.Link>
+            <Nav.Link as={Link} to="/quiz">Interactive Quiz</Nav.Link>
             <Nav.Link as={Link} to="/dashboard">My Dashboard</Nav.Link>
             <Nav.Link as={Link} to="/blog">Expert Blogs</Nav.Link>
             <Nav.Link href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading.html">iTRADE</Nav.Link>
