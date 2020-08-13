@@ -21,26 +21,32 @@ export class BlogPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            apiResponse: "",
+            apiResponse: {
+                studentBlog: [],
+                exportBlog: []
+            },
         }
     }
 
 
     callAPI = () => {
-        console.log("send")
-        fetch('http://localhost:8080/ping')
-            .then(res => res.text())
-            .then(res => this.setState({
-                apiResponse: res
-            }))
+        fetch('/ping')
+            .then(res => res.json())
+            .then(res => {
+                this.setState({
+                    apiResponse: res
+                })
+            })
+            .catch(err => console.log(err))
     }
 
     componentDidMount = () => {
-        console.log("here")
         this.callAPI()
     }
 
     render() {
+        const { studentBlog } = this.state.apiResponse
+
         return (
             <div>
                 <Jumbotron className="justify-content-center">
@@ -58,29 +64,21 @@ export class BlogPage extends React.Component {
                         </Col>
                     </Row>
                 </Jumbotron>
-                <Row className="d-flex">
+                <Row className="d-flex flex-wrap">
                     <Col>
                         <Row className="mx-auto container justify-content-end">
-                            <Col md={5}>
-                                <Card className="h-100">
-                                    <Card.Img variant="top" src={invest} alt="quiz" />
-                                    <h4 className="p-3">From debt to investing</h4>
-                                    <p className="px-3 mb-auto">Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals</p>
-                                    <Button className="align-self-start mx-3 mb-3">
-                                        <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quiz'>Read More</Link>
-                                    </Button>
-                                </Card>
-                            </Col>
-                            <Col md={5}>
-                                <Card className="h-100">
-                                    <Card.Img variant="top" src={young} alt="quiz" />
-                                    <h4 className="p-3">Starting young, starting early</h4>
-                                    <p className="px-3 mb-auto">Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals</p>
-                                    <Button className="align-self-start mx-3 mb-3">
-                                        <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quiz'>Read More</Link>
-                                    </Button>
-                                </Card>
-                            </Col>
+                            {studentBlog.map((item, index) => (
+                                <Col key={index} md={5}>
+                                    <Card className="h-100">
+                                        <Card.Img variant="top" src={invest} alt="quiz" />
+                                        <h4 className="p-3">{item.title}</h4>
+                                        <p className="px-3 mb-auto">{item.content}</p>
+                                        <Button className="align-self-start mx-3 mb-3">
+                                            <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to={item.link}>Read More</Link>
+                                        </Button>
+                                    </Card>
+                                </Col>
+                            ))}
                         </Row>
                     </Col>
                     <Col>
