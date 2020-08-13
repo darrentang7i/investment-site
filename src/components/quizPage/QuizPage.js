@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import './QuizPage.css'
 import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
-import Media from 'react-bootstrap/Media'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 export function QuizPage() {
     const [show, toggleShow] = useState(true);
@@ -14,31 +13,35 @@ export function QuizPage() {
     // }
 
     return (
-        <div id="header">
-            <Container fluid className="p-5" >
-                <div id="quiz-title"> Interactive Quiz</div>
-                <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
-            </Container >
-            <Form>
-                {['checkbox', 'radio'].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
-                    <Form.Check 
-                        type={type}
-                        id={`default-${type}`}
-                        label={`default ${type}`}
-                    />
+        <div>
+            <div id="header">
+                
+                <Container fluid className="p-5" >
+                    <div id="quiz-title"> Interactive Quiz</div>
+                    <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
+                </Container >
+            </div>
+            <div id="questions">
+                <Container>
+                    <Form>
+                        <Row className="pt-2">
+                            <div id="numbering">1</div>
+                            <div id="question-content">You are on a TV game show and have three options. Which one would you choose?</div>
+                        </Row>
 
-                    {/* <Form.Check
-                        disabled
-                        type={type}
-                        label={`disabled ${type}`}
-                        id={`disabled-default-${type}`}
-                    /> */}
-                    </div>
-                ))}
-             </Form>
-
+                        {['$1000 in cash', '50% chance at winning $5000', '10% chance of winning $500,000'].map((response) => (
+                            <div key={`default-checkbox`} className="options mb-3">
+                            <Form.Check 
+                                custom
+                                type={'checkbox'}
+                                id={`default-checkbox`}
+                                label={`${response}`}
+                            />
+                            </div>
+                        ))}
+                    </Form>
+                </Container>
+            </div>
         </div>
-        
     )
 }
