@@ -56,3 +56,4 @@ export class QuizPage extends React.Component {
         )
     }
 }
+
