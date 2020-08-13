@@ -7,6 +7,7 @@ import scotia from './scotia.svg'
 
 import { MainPage } from '../mainPage/MainPage'
 import { QuizPage } from '../quizPage/QuizPage'
+import { QuizResponse } from '../quizResponse/QuizResponse'
 
 
 
@@ -20,9 +21,8 @@ function App() {
           <Nav className="justify-content-around bg-transparent w-100">
             <Nav.Link as={Link} to="/">Interactive Quiz</Nav.Link>
             <Nav.Link as={Link} to="/quiz">My Dashboard</Nav.Link>
-            <Nav.Link as={Link} to="/quiz">My Dashboard</Nav.Link>
             <Nav.Link as={Link} to="/quiz">Expert Blogs</Nav.Link>
-            <Nav.Link as={Link} to="/quiz">iTRADE</Nav.Link>
+            <Nav.Link href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading.html">iTRADE</Nav.Link>
             <Nav.Link as={Link} to="/quiz">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -31,6 +31,9 @@ function App() {
       <Switch>
         <Route path="/quiz">
           <QuizPage />
+        </Route>
+        <Route path="/other">
+          <QuizResponse />
         </Route>
         <Route path="/">
           <MainPage />
