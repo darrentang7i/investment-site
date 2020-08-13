@@ -7,6 +7,10 @@ import Row from 'react-bootstrap/Row';
 
 export class QuizPage extends React.Component {
 
+    change = (event) => {
+        console.log("printing something")
+    }
+
     render() {
         return (
             <div>
@@ -21,20 +25,21 @@ export class QuizPage extends React.Component {
                     <Container>
                         <Form>
                             <Row className="pt-2">
-                                <div id="numbering">1</div>
                                 <div id="question-content">You are on a TV game show and have three options. Which one would you choose?</div>
                             </Row>
 
                             {['$1000 in cash', '50% chance at winning $5000', '10% chance of winning $500,000'].map((response) => (
-                                <div key={response} className="options mb-3">
+                                <div className="options mb-3">
                                     <Form.Check
                                         custom
                                         type={'checkbox'}
                                         id={response}
                                         label={`${response}`}
+                                        onChange={this.change}
                                     />
                                 </div>
                             ))}
+
                         </Form>
                     </Container>
                 </div>
