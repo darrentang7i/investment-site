@@ -2,12 +2,14 @@
   "name": "invest-site",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://127.0.0.1:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "fetch": "^1.1.0",
     "mongoose": "^5.9.28",
@@ -19,7 +21,7 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "dev": "react-scripts start && node app.js",
+    "dev": "concurrently \"react-scripts start\" \"nodemon app.js\"",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

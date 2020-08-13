@@ -28,15 +28,17 @@ export class BlogPage extends React.Component {
 
     callAPI = () => {
         console.log("send")
-        fetch('http://localhost:8080/ping')
+        fetch('/ping')
             .then(res => res.text())
-            .then(res => this.setState({
+            .then(res => {
+                console.log(res)
+                this.setState({
                 apiResponse: res
-            }))
+            })})
+            .catch(err => console.log(err))
     }
 
     componentDidMount = () => {
-        console.log("here")
         this.callAPI()
     }
 

@@ -7,6 +7,10 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(express.json())
 
+app.get('/', function (req, res) {
+  console.log("Hello there");
+});
+
 app.get('/ping', function (req, res) {
   return res.send('pong');
 });
