@@ -11,19 +11,13 @@ import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
-import blog from './blog-pics/blog.svg'
-import invest from './blog-pics/pic1.svg'
-import young from './blog-pics/pic2.svg'
-import market from './blog-pics/pic3.svg'
-import times from './blog-pics/pic4.svg'
-
 export class BlogPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             apiResponse: {
                 studentBlog: [],
-                exportBlog: []
+                expertBlog: []
             },
         }
     }
@@ -46,6 +40,7 @@ export class BlogPage extends React.Component {
 
     render() {
         const { studentBlog } = this.state.apiResponse
+        const { expertBlog } = this.state.apiResponse
 
         return (
             <div>
@@ -60,17 +55,18 @@ export class BlogPage extends React.Component {
                             </Form>
                         </Col>
                         <Col>
-                            <img src={blog} alt="Invest Today!"></img>
+                            <img src='/blog/blog.svg' alt="Invest Today!"></img>
                         </Col>
                     </Row>
                 </Jumbotron>
                 <Row className="d-flex flex-wrap">
                     <Col>
-                        <Row className="mx-auto container justify-content-end">
+                        <h2>Student Experiences</h2>
+                        <Row className="mx-auto container justify-content-center">
                             {studentBlog.map((item, index) => (
-                                <Col key={index} md={5}>
+                                <Col key={index} md={5} className="mb-3">
                                     <Card className="h-100">
-                                        <Card.Img variant="top" src={invest} alt="quiz" />
+                                        <Card.Img variant="top" src={process.env.PUBLIC_URL + item.image} alt="quiz" />
                                         <h4 className="p-3">{item.title}</h4>
                                         <p className="px-3 mb-auto">{item.content}</p>
                                         <Button className="align-self-start mx-3 mb-3">
@@ -82,27 +78,20 @@ export class BlogPage extends React.Component {
                         </Row>
                     </Col>
                     <Col>
-                        <Row className="mx-auto container justify-content-start">
-                            <Col md={5}>
-                                <Card className="h-100">
-                                    <Card.Img variant="top" src={market} alt="quiz" />
-                                    <h4 className="p-3">Stock market volatility</h4>
-                                    <p className="px-3 mb-auto">Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals</p>
-                                    <Button className="align-self-start mx-3 mb-3">
-                                        <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quiz'>Read More</Link>
-                                    </Button>
-                                </Card>
-                            </Col>
-                            <Col md={5}>
-                                <Card className="h-100">
-                                    <Card.Img variant="top" src={times} alt="quiz" />
-                                    <h4 className="p-3">Predictions for the stock market</h4>
-                                    <p className="px-3 mb-auto">Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals</p>
-                                    <Button className="align-self-start mx-3 mb-3">
-                                        <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quiz'>Read More</Link>
-                                    </Button>
-                                </Card>
-                            </Col>
+                    <h2>Expert Advice</h2>
+                        <Row className="mx-auto container justify-content-center">
+                            {expertBlog.map((item, index) => (
+                                <Col key={index} md={5} className="mb-3">
+                                    <Card className="h-100">
+                                        <Card.Img variant="top" src={process.env.PUBLIC_URL + item.image} alt="quiz" />
+                                        <h4 className="p-3">{item.title}</h4>
+                                        <p className="px-3 mb-auto">{item.content}</p>
+                                        <Button className="align-self-start mx-3 mb-3">
+                                            <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to={item.link}>Read More</Link>
+                                        </Button>
+                                    </Card>
+                                </Col>
+                            ))}
                         </Row>
                     </Col>
                 </Row>
