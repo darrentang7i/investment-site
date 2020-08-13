@@ -206,7 +206,7 @@ const data = {
     ],
     featuredInvestmentsA: {
         title: "Bonds & GICs",
-        content: ["List of recommended investment options based on individual’s interests and goals specified on the quiz"],
+        content: ["List of bonds and GICs based on individual’s interests and goals specified on the quiz"],
         links: []
     },
     featuredInvestmentsB: {
@@ -221,7 +221,7 @@ const data = {
     },
     featuredInvestmentsC: {
         title: "Stocks",
-        content: ["List of recommended investment options based on individual’s interests and goals specified on the quiz"],
+        content: ["List of recommended stocks based on individual’s interests and goals specified on the quiz"],
         links: []
     },
 }
