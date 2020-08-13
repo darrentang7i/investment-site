@@ -30,11 +30,11 @@ export function QuizPage() {
                         </Row>
 
                         {['$1000 in cash', '50% chance at winning $5000', '10% chance of winning $500,000'].map((response) => (
-                            <div key={`default-checkbox`} className="options mb-3">
+                            <div key={response} className="options mb-3">
                             <Form.Check 
                                 custom
                                 type={'checkbox'}
-                                id={`default-checkbox`}
+                                id={response}
                                 label={`${response}`}
                             />
                             </div>
