@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar, Nav, Form } from 'react-bootstrap'
+import { Navbar, Nav, Row } from 'react-bootstrap'
 import { Switch, Route, Link } from 'react-router-dom'
-import scotia from './scotia.svg'
 
 import { MainPage } from '../mainPage/MainPage'
 import { QuizPage } from '../quizPage/QuizPage'
@@ -16,7 +15,12 @@ import { DashboardPage } from '../dashboardPage/DashboardPage'
 function App() {
   return (
     <div className="App">
-      <Link to='/'><img className="d-flex" src={scotia} alt="Logo"></img></Link>
+      <Link className="" to='/'>
+        <Row className="justify-content-around">
+          <img className="" src='/scotia.svg' alt="Logo"></img>
+          <img className="" height="150" width="auto" src='/logo.png' alt="Logo"></img>
+        </Row>
+      </Link>
       <Navbar className="navbar" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
