@@ -32,18 +32,18 @@ const dataBlog = {
 const dataDashBoard = {
     L1NoRiskResources: [
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preference",
+            title: "Personal Finance Tips",
+            content: "Learn more about setting personal financial goals. Understand your plans and how different investment strategies can help you reach your goals.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         },
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preference",
+            title: "Stock Picking Strategies",
+            content: "Learn more about potential investment opportunities based on your risk preference.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         },
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preference",
+            title: "Using Excel to Track Your Stock Profile",
+            content: "Learn how to use Excel to understand your historical portfolio values and prices for stocks. Learn how to copy over transaction history and use graphing tools to visualize performance, draw insights, and make appropriate decisions.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         }
     ],
