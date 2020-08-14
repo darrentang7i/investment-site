@@ -60,12 +60,20 @@ app.post('/quizapi', function(req, res) {
 })
 
 app.get('/quizgetapi', function(req, res) {
-  return res.send([`${points}`, `${level}`])
+  let response = {
+    p: `${points}`,
+    l: `${level}`,
+    data: ''
+  }
+  if (points > 30) {
+    response.data = data.dataFeatured.featuredInvestmentsC
+  } else if (points < 20) {
+    response.data = data.dataFeatured.featuredInvestmentsA
+  } else {
+    response.data = data.dataFeatured.featuredInvestmentsB
+  }
+  return res.send(response)
 })
-
-// app.get('/dashboardapi', function(req, res) {
-//   return res.send(`${level}`)
-// })
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname+'/build/index.html'));

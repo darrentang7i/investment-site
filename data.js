@@ -12,7 +12,7 @@ const dataBlog = {
             link: "/",
             image: "/blog/pic2.svg"
         }
-    ], 
+    ],
     expertBlog: [
         {
             title: "Stock market volatility",
@@ -182,28 +182,65 @@ const dataDashBoard = {
             content: "Learn more about potential investment opportunities based on your risk preference",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         }
-    ],
+    ]
+}
+
+
+const dataFeatured = {
     featuredInvestmentsA: {
         title: "Bonds & GICs",
-        content: ["List of bonds and GICs based on individual’s interests and goals specified on the quiz"],
-        links: []
+        content: [
+            {
+                resource: "Scotia Diversified Monthly Income Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/balanced-funds/scotia-diversified-monthly-income-fund.html"
+            },
+            {
+                resource: "Scotia Canadian Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canadian-index-fund.html",
+            },
+            {
+                resource: "Scotia CanAm Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canam-index-fund.html"
+            }
+        ]
     },
     featuredInvestmentsB: {
         title: "Mutual Funds & ETFs",
-        content: [  "Scotia Diversified Monthly Income Fund",
-                    "Scotia Canadian Index Fund",
-                    "Scotia CanAm Index Fund"],
-        links: [    "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/balanced-funds/scotia-diversified-monthly-income-fund.html",
-                    "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canadian-index-fund.html",
-                    "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canam-index-fund.html"
-                    ]
+        content: [
+            {
+                resource: "Scotia Diversified Monthly Income Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/balanced-funds/scotia-diversified-monthly-income-fund.html"
+            },
+            {
+                resource: "Scotia Canadian Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canadian-index-fund.html",
+            },
+            {
+                resource: "Scotia CanAm Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canam-index-fund.html"
+            }
+        ]
     },
     featuredInvestmentsC: {
         title: "Stocks",
-        content: ["List of recommended stocks based on individual’s interests and goals specified on the quiz"],
-        links: []
+        content: [
+            {
+                resource: "Scotia Diversified Monthly Income Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/balanced-funds/scotia-diversified-monthly-income-fund.html"
+            },
+            {
+                resource: "Scotia Canadian Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canadian-index-fund.html",
+            },
+            {
+                resource: "Scotia CanAm Index Fund",
+                link: "https://www.scotiabank.com/content/scotiafunds/canada/scotiafunds/en/fund-overviews/index-funds/scotia-canam-index-fund.html"
+            }
+        ]
     }
 }
 
+
 exports.dataBlog = dataBlog
 exports.dataDashboard = dataDashBoard
+exports.dataFeatured = dataFeatured
