@@ -379,7 +379,7 @@ export class QuizPage extends React.Component {
                 </div>
         
 
-                <button onClick={this.componentDidMount}>
+                <button type="button" class="btn btn-primary" onClick={this.componentDidMount}>
                     <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quizResult'>Submit</Link>
                 </button>
             </div>
