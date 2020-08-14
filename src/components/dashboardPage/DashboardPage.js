@@ -125,7 +125,7 @@ export class DashboardPage extends React.Component {
                                 <Col key={index} sm={4}>
                                     <Card className="p-4">
                                         <h4>{item.title}</h4>
-                                        <p>Learn more about potential investment opportunities based on your risk preferences</p>
+                                        <p>{item.content}</p>
                                         <Button className="btn btn-primary">
                                             <a style={{ color: 'inherit', textDecoration: 'inherit' }} href={item.link}>Open an Account</a>
                                         </Button>
