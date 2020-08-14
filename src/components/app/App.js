@@ -17,9 +17,8 @@ function App() {
   return (
     <div className="App">
       <Link className="" to='/'>
-        <Row className="justify-content-around">
+        <Row className="justify-content-start pl-3">
           <img className="" src='/scotia.svg' alt="Logo"></img>
-          <img className="" height="150" width="auto" src='/logo.png' alt="Logo"></img>
         </Row>
       </Link>
       <Navbar className="navbar" expand="lg">

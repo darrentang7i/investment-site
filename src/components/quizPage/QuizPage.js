@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom'
 
 
@@ -43,8 +44,16 @@ export class QuizPage extends React.Component {
                 <div id="header">
                     
                     <Container fluid className="p-5" >
-                        <div id="quiz-title"> Interactive Quiz</div>
-                        <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
+                        <Row>
+                            <Col>
+                                <div id="quiz-title"> Interactive Quiz</div>
+                                <div>Take this interactive quiz to learn more about your risk tolerance and preferences to <br></br>identify the appropriate investment strategy to reach your financial goals</div>
+                            </Col>
+                            <Col>
+                                <img className="" height="150" width="auto" src='/white_logo.png' alt="Logo"></img>
+                            </Col>
+                        </Row>
+                        
                     </Container >
                 </div>
                 <div className="section">General</div>
@@ -370,7 +379,7 @@ export class QuizPage extends React.Component {
                 </div>
         
 
-                <button onClick={this.componentDidMount}>
+                <button type="button" class="btn btn-primary" onClick={this.componentDidMount}>
                     <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quizResult'>Submit</Link>
                 </button>
             </div>
