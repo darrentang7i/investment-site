@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { Link } from 'react-router-dom'
+
 
 export class QuizPage extends React.Component {
-    // const [show, toggleShow] = useState(true);
-
     constructor() {
         super();
         this._points = 0;
@@ -16,6 +16,18 @@ export class QuizPage extends React.Component {
     change = (idx) => {    
         this._points += idx + 1;
         console.log("current points: " + this._points);
+    }
+
+    componentDidMount = () => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify({points: this._points })
+        };
+        fetch('/quizapi', requestOptions)
+            .then(response => response.json())
+            .then(data => this.setState({ postId: data.id }));
+        console.log("sending");
     }
 
     render() {
@@ -351,7 +363,9 @@ export class QuizPage extends React.Component {
                 </div>
         
 
-                <Button>Submit</Button>
+                <button onClick={this.componentDidMount}>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='../quizResponse'>Submit</Link>
+                </button>
             </div>
         )
     }
