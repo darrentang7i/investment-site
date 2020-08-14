@@ -230,7 +230,7 @@ export class QuizPage extends React.Component {
                         <Form>
                             <Row className="pt-2">
                                 <div id="numbering">2</div>
-                                <div id="question-content">When would you potentially want to liquidate some/all of your assets to use towards your personal and financial goals?</div>
+                                <div id="question-content">When would you potentially want to use some/all of your assets to use towards your personal and financial goals?</div>
                             </Row>
 
                             {['A few months', '5 years', '10 years'].map((response, index) => (
@@ -304,7 +304,7 @@ export class QuizPage extends React.Component {
                                 <div id="question-content">A stock you bought over a year ago has suddenly increased in value by over 40%. Based on goals you may have, what decision would you make?</div>
                             </Row>
 
-                            {['Consider selling enough to cover your original investment', 'Sell and move your cash to a low-risk investment', 'Borrow money to buy more stock'].map((response, index) => (
+                            {['Consider selling enough to cover your original investment', 'Sell stock and move cash to a low-risk investment', 'Borrow money to buy more stock'].map((response, index) => (
                                 <div key={response} className="options mb-3">
                                     <Form.Check
                                         custom
