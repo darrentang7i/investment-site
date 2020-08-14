@@ -1,10 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Scotiabank Investigator
+
+Managing finances is one of the biggest challenges a university student will face. Research shows that 35% of students believe they can manage their finances after completing their education. When considering investing, studies conducted identified that only 43% of Millennials and Gen Zs are more likely to hold their savings in investments as opposed to cash. Scotiabank services youth aged 18 or older, we wanted to provide a one-stop shop that provides a collection of these resources bundled with an investing platform geared towards students.
+
+The result was Scotia iNVESTIGATOR. An all-encompassing digital platform accessible for students, providing a personalized experience and catered learning materials and resources.
+
+## Getting Started
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm run dev`
+`npm run dev`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,17 +19,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm start`
+`npm start`
 
 Runs the backend server and starts up the site  
 Open [http://localhost:8080](http://localhost:8080) to view it in browser. 
 
-### `npm test`
+`npm test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+`npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -32,7 +39,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+`npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 

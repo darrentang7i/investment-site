@@ -15,17 +15,20 @@ export class QuizPage extends React.Component {
         this._level = 0;
     } 
 
+    //gets triggered everytime a checkbox is clicked, points are added
     change = (idx) => {    
         this._points += idx + 1;
         console.log("current points: " + this._points);
     }
 
+    //called when experience question is asked, and stores experience level to give user personalized info
     investorType = (idx) => {
         this._points += idx + 1;
         this._level = idx;
         console.log(this._level);
     }
 
+    //make a POST request, storing points and level information in /quizapi, which is handled in app.js
     componentDidMount = () => {
         const requestOptions = {
             method: 'POST',
@@ -379,7 +382,7 @@ export class QuizPage extends React.Component {
                 </div>
         
 
-                <button type="button" class="btn btn-primary" onClick={this.componentDidMount}>
+                <button type="button" class="btn btn-primary"   onClick={this.componentDidMount}>
                     <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to='/quizResult'>Submit</Link>
                 </button>
             </div>
