@@ -21,7 +21,7 @@ export function MainPage() {
                             as well as access relevant learning material to begin your investing journey with Scotiabank!</p>
                     </Col>
                     <Col>
-                        <img src='/main/graph-pic.svg'  alt="Invest Today!"></img>
+                        <img className="logo" height="150" width="auto" src='/logo.png' alt="Invest Today!"></img>
                     </Col>
                 </Row>
             </Jumbotron>

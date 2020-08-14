@@ -3,13 +3,13 @@ const dataBlog = {
         {
             title: "From debt to investing",
             content: "Compilation of stories to help Canadian students learn how to successfully manage their money, including tips on student loans, debt repayment, investing, and career building.",
-            link: "/blogPost",
+            link: "/",
             image: "/blog/pic1.svg"
         },
         {
             title: "Starting young, starting early",
             content: "Want to make sure you have enough money for the future? Want to build wealth over time while minimizing risk? Find out why you should learn more about investing and get started now",
-            link: "/",
+            link: "/blogPost",
             image: "/blog/pic2.svg"
         }
     ],
@@ -83,18 +83,18 @@ const dataDashBoard = {
     ],
     L1SomeRiskResources: [
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preferencev",
+            title: "Personal Finance Tips",
+            content: "Learn more about setting personal financial goals. Understand your plans and how different investment strategies can help you reach your goals.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         },
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preference",
+            title: "Stock Picking Strategies",
+            content: "Learn more about potential investment opportunities based on your risk preference.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         },
         {
-            title: "Level 1 Beginner",
-            content: "Learn more about potential investment opportunities based on your risk preference",
+            title: "Using Excel to Track Your Stock Profile",
+            content: "Learn how to use Excel to understand your historical portfolio values and prices for stocks. Learn how to copy over transaction history and use graphing tools to visualize performance, draw insights, and make appropriate decisions.",
             link: "https://www.scotiaitrade.com/en/direct-investing-and-online-trading/education.html"
         }
     ],

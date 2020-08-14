@@ -76,7 +76,7 @@ export class DashboardPage extends React.Component {
                     <Col sm={3}>
                         <h4>Featured Investments</h4>
                         <Card className="p-4">
-                            <p>Recommended investment options based your interests and goals</p>
+                            <p>Recommended investment options based on your interests and goals</p>
                             <p className="font-weight-bold">{this.state.featured.title}</p>
                             <ul>
                                 {
@@ -125,7 +125,9 @@ export class DashboardPage extends React.Component {
                                     <Card className="p-4">
                                         <h4>{item.title}</h4>
                                         <p>Learn more about potential investment opportunities based on your risk preferences</p>
-                                        <Button className="btn btn-primary">Learn More</Button>
+                                        <Button className="btn btn-primary">
+                                            <a style={{ color: 'inherit', textDecoration: 'inherit' }} href={item.link}>Open an Account</a>
+                                        </Button>
                                     </Card>
                                 </Col>
                             ))}
