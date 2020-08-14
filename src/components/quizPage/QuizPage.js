@@ -333,7 +333,7 @@ export class QuizPage extends React.Component {
                         </Form>
                     </Container>
 
-                    <div className="section">Let's add some goals to your dashboard</div>
+                    <div className="section">Other Goals</div>
                     <Container>
                         <Form>
                         <Row className="pt-2">

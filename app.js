@@ -12,8 +12,6 @@ let points = 0;
 
 app.use(express.json())
 
-
-
 app.get('/ping', function (req, res) {
   return res.send(data);
 });
@@ -27,10 +25,9 @@ app.get('/quizgetapi', function(req, res) {
   return res.send(`${points}`)
 })
 
-app.get('/', function (req, res) {
-  console.log("Hello there");
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname+'/build/index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
-
 
