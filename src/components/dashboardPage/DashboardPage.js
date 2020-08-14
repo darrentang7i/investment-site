@@ -16,11 +16,8 @@ export class DashboardPage extends React.Component {
         super(props);
         this.state = {
             apiResponse: 0,
-<<<<<<< HEAD
             userLevel : 0,
             resources : []
-=======
->>>>>>> 804b3733891c48ece45194b5fd7009db10129c44
         }
     }
 

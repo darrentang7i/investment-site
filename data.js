@@ -3,7 +3,7 @@ const dataBlog = {
         {
             title: "From debt to investing",
             content: "Compilation of stories to help Canadian students learn how to successfully manage their money, including tips on student loans, debt repayment, investing, and career building.",
-            link: "/",
+            link: "/blogPost",
             image: "/blog/pic1.svg"
         },
         {
