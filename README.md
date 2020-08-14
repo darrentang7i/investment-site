@@ -1,6 +1,6 @@
 # Scotiabank Investigator
 
-![Investigator](/logo.png)
+![Investigator](./public/logo.png)
 Format: ![Alt Text](url)
 
 
