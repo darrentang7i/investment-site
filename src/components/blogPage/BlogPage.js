@@ -27,7 +27,6 @@ export class BlogPage extends React.Component {
         fetch('/ping')
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 this.setState({
                     apiResponse: res
                 })
