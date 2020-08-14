@@ -6,10 +6,11 @@ Managing finances is one of the biggest challenges a university student will fac
 
 The result was Scotia iNVESTIGATOR. An all-encompassing digital platform accessible for students, providing a personalized experience and catered learning materials and resources.
 
+## ![Site Link](https://scotiabank-investigator.herokuapp.com/)<br/>
+
 ## About Our Project
 
 ![Preview](./public/preview.png)
-
 We've created three main components to our project\: <br/><br/>
 
 **Investigator Quiz**  
