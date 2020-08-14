@@ -13,7 +13,8 @@ let points = 0;
 app.use(express.json())
 
 app.get('/ping', function (req, res) {
-  return res.send(data);
+  console.log(data.dataBlog)
+  return res.send(data.dataBlog);
 });
 
 app.post('/quizapi', function(req, res) {

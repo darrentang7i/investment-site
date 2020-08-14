@@ -2,54 +2,30 @@ const dataBlog = {
     studentBlog: [
         {
             title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
+            content: "Compilation of stories to help Canadian students learn how to successfully manage their money, including tips on student loans, debt repayment, investing, and career building.",
             link: "/",
             image: "/blog/pic1.svg"
         },
         {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
+            title: "Starting young, starting early",
+            content: "Want to make sure you have enough money for the future? Want to build wealth over time while minimizing risk? Find out why you should learn more about investing and get started now",
             link: "/",
             image: "/blog/pic1.svg"
-        },
-        {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
-            link: "/",
-            image: "/blog/pic1.svg"
-        },
-        {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
-            link: "/",
-            image: "/blog/pic1.svg"
-        },
+        }
     ], 
     expertBlog: [
         {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
+            title: "Stock market volatility",
+            content: "Learn more about how market volatility is related to investment risk, what the standard deviation measure means, and how to make financial decisions based on market trends",
             link: "/",
             image: "/blog/pic1.svg"
         },
         {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
+            title: "Predictions for the stock market",
+            content: "Interested in seeing what the future of the stock market holds? Keep reading to see the top ten predictions for what could play out in the stock market and the greater economy",
             link: "/",
             image: "/blog/pic1.svg"
-        },
-        {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
-            link: "/",
-            image: "/blog/pic1.svg"
-        },
-        {
-            title: "From debt to investing",
-            content: "Take this interactive quiz to learn more about your risk tolerance and preferences to identify the appropriate investment strategy to reach your financial goals",
-            link: "/",
-            image: "/blog/pic1.svg"
-        },
+        }
     ]
 }
 
@@ -229,5 +205,5 @@ const dataDashBoard = {
     }
 }
 
-module.exports = dataBlog
-module.exports = dataDashBoard
+exports.dataBlog = dataBlog
+exports.dataDashboard = dataDashBoard
