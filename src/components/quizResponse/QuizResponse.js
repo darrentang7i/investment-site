@@ -14,10 +14,12 @@ export class QuizResponse extends React.Component {
         }
     }
 
+    //called by default 
     componentDidMount = () => {
         this.apiCall();
     }
 
+    //fetch('/quizgetapi) will call app.get in app.js, to make a get request
     apiCall = () => {
         fetch('/quizgetapi')
             .then(res => res.json())

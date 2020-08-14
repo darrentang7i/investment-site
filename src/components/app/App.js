@@ -8,6 +8,7 @@ import { MainPage } from '../mainPage/MainPage'
 import { QuizPage } from '../quizPage/QuizPage'
 import { QuizResponse } from '../quizResponse/QuizResponse'
 import { BlogPage } from '../blogPage/BlogPage'
+import { BlogPost } from '../blogPost/BlogPost'
 import { DashboardPage } from '../dashboardPage/DashboardPage'
 
 
@@ -48,6 +49,9 @@ function App() {
         </Route>
         <Route path="/blog">
           <BlogPage />
+        </Route>
+        <Route path="/blogPost">
+          <BlogPost />
         </Route>
         <Route path="/">
           <MainPage />

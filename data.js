@@ -3,28 +3,28 @@ const dataBlog = {
         {
             title: "From debt to investing",
             content: "Compilation of stories to help Canadian students learn how to successfully manage their money, including tips on student loans, debt repayment, investing, and career building.",
-            link: "/",
+            link: "/blogPost",
             image: "/blog/pic1.svg"
         },
         {
             title: "Starting young, starting early",
             content: "Want to make sure you have enough money for the future? Want to build wealth over time while minimizing risk? Find out why you should learn more about investing and get started now",
             link: "/",
-            image: "/blog/pic1.svg"
+            image: "/blog/pic2.svg"
         }
     ], 
     expertBlog: [
         {
             title: "Stock market volatility",
-            content: "Learn more about how market volatility is related to investment risk, what the standard deviation measure means, and how to make financial decisions based on market trends",
+            content: "Learn more about investment risk and how it relates to market volatility. Explore the meaning of standard deviation and determine how to make decisions based on market trends",
             link: "/",
-            image: "/blog/pic1.svg"
+            image: "/blog/pic3.svg"
         },
         {
             title: "Predictions for the stock market",
-            content: "Interested in seeing what the future of the stock market holds? Keep reading to see the top ten predictions for what could play out in the stock market and the greater economy",
+            content: "Interested in seeing what the future of the stock market holds? Keep reading to see the top ten predictions for what could play out in the stock market and how it will impact the economy",
             link: "/",
-            image: "/blog/pic1.svg"
+            image: "/blog/pic4.svg"
         }
     ]
 }
