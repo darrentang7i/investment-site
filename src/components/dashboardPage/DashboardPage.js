@@ -35,7 +35,6 @@ export class DashboardPage extends React.Component {
     render() {
         return (
             <div>
-                <p>{this.state.apiResponse}</p>
                 <Row className="m-4">
                     <Col sm={3}><h1>My Dashboard</h1></Col>
                     <Col sm={6}>
