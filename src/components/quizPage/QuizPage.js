@@ -11,6 +11,7 @@ export class QuizPage extends React.Component {
     constructor() {
         super();
         this._points = 0;
+        this._level = 0;
     } 
 
     change = (idx) => {    
@@ -18,11 +19,17 @@ export class QuizPage extends React.Component {
         console.log("current points: " + this._points);
     }
 
+    investorType = (idx) => {
+        this._points += idx + 1;
+        this._level = idx;
+        console.log(this._level);
+    }
+
     componentDidMount = () => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
-            body: JSON.stringify({points: this._points })
+            body: JSON.stringify({points: this._points, level : this._level })
         };
         fetch('/quizapi', requestOptions)
             .then(response => response.json())
@@ -77,7 +84,7 @@ export class QuizPage extends React.Component {
                                         type={'checkbox'}
                                         id={response}
                                         label={`${response}`}
-                                        onChange={() => this.change(index)}
+                                        onChange={() => this.investorType(index)}
                                     />
                                 </div>
                             ))}

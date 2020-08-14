@@ -12,12 +12,15 @@ export class DashboardPage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            apiResponse: 0
+            apiResponse: 0,
+            userLevel : 0,
+            resources : []
         }
     }
 
     componentDidMount = () => {
         this.apiCall();
+        this.getLevel();
     }
 
     apiCall = () => {
@@ -26,10 +29,23 @@ export class DashboardPage extends React.Component {
             .then(res => {
                 console.log(res);
                 this.setState({
-                    apiResponse: parseInt(res)
+                    apiResponse: parseInt(res[0]),
+                    userLevel : parseInt(res[1])
                 })
             })
             .catch(err => console.log(err));
+    }
+
+    getLevel = () => {
+        fetch('/levelapi')
+            .then(res => res.json())
+            .then(res => {
+                this.state.resources = res;
+                console.log(this.state.resources[0].title);
+            })
+            .catch(err => console.log(err));
+
+
     }
 
     render() {
@@ -77,9 +93,14 @@ export class DashboardPage extends React.Component {
                         <Row>
                             <Col sm={4}>
                                 <Card className="p-4">
-                                    <h4>Level 1: Beginner</h4>
-                                    <p>Learn more about potential investment opportunities based on your risk preferences</p>
-                                    <Button className="btn btn-primary">Learn More</Button>
+                                    {this.state.resources.map((item) => (
+                                        <div>
+                                            <h4>{item[0].title}</h4>
+                                            <p>Learn more about potential investment opportunities based on your risk preferences</p>
+                                            <Button className="btn btn-primary">Learn More</Button>
+                                        </div>
+                                    ))}
+                                    
                                 </Card>
                             </Col>
                             <Col sm={4}>
