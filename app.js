@@ -14,7 +14,6 @@ let level = 0;
 app.use(express.json())
 
 app.get('/ping', function (req, res) {
-  console.log(data.dataBlog)
   return res.send(data.dataBlog);
 });
 
