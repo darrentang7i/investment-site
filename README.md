@@ -10,9 +10,8 @@ The result was Scotia iNVESTIGATOR. An all-encompassing digital platform accessi
 
 ## About Our Project
 
-![Preview](./public/preview.png)
-We've created three main components to our project\: <br/><br/>
-
+![Preview](./public/preview.png)  <br><br>
+### We've created three main components to our project\:  <br>
 **Investigator Quiz**  
 Used to help students and new investors learn more about themselves, benchmark where they start, and also set goals for their investing future  <br/>
 **Investigator Dashboard**  
