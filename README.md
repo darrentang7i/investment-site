@@ -1,5 +1,9 @@
 # Scotiabank Investigator
 
+![Investigator](/logo.png)
+Format: ![Alt Text](url)
+
+
 Managing finances is one of the biggest challenges a university student will face. Research shows that 35% of students believe they can manage their finances after completing their education. When considering investing, studies conducted identified that only 43% of Millennials and Gen Zs are more likely to hold their savings in investments as opposed to cash. Scotiabank services youth aged 18 or older, we wanted to provide a one-stop shop that provides a collection of these resources bundled with an investing platform geared towards students.
 
 The result was Scotia iNVESTIGATOR. An all-encompassing digital platform accessible for students, providing a personalized experience and catered learning materials and resources.
