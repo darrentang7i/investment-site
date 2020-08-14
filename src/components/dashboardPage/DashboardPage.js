@@ -97,13 +97,14 @@ export class DashboardPage extends React.Component {
                         <Col sm={8} className="mx-auto">
                             <PieChart className="mx-auto"
                                 data={[
-                                    { title: 'Cash', value: 10, color: '#32CD32' },
-                                    { title: 'Stocks', value: 15, color: '#FFFF00' },
-                                    { title: 'Mutual Funds', value: 20, color: '#FF0000' },
+                                    { title: 'Cash', value: 100, color: '#32CD32' },
+                                    { title: 'Stocks', value: 0, color: '#FFFF00' },
+                                    { title: 'Mutual Funds', value: 0, color: '#FF0000' },
                                 ]}
                             />
                         </Col>
-                        <p className="pt-2">Cash: $$$<br />Stocks: $$$<br />Mutual Funds: $$$</p>
+                        {/* <p className="pt-2">Cash: $$$<br />Stocks: $$$<br />Mutual Funds: $$$</p> */}
+                        <p className="pt-2">Cash: $1000</p> 
                     </Col>
                 </Row>
                 <Row className="m-4">
@@ -144,12 +145,16 @@ function GraphComponent() {
         () => [
             {
                 label: 'Series 1',
-                data: [{ x: 1, y: 10 }, { x: 2, y: 12 }, { x: 3, y: 15 }]
-            },
-            {
-                label: 'Series 2',
-                data: [{ x: 1, y: 11 }, { x: 2, y: 12.5 }, { x: 3, y: 14 }]
-            },
+                data: [{ x: 0 ,y: 1000 }, { x: 1 ,y: 1000 }]
+            }
+            // {
+            //     label: 'Series 1',
+            //     data: [{ x: 1, y: 10 }, { x: 2, y: 12 }, { x: 3, y: 15 }]
+            // },
+            // {
+            //     label: 'Series 2',
+            //     data: [{ x: 1, y: 11 }, { x: 2, y: 12.5 }, { x: 3, y: 14 }]
+            // },
         ],
         []
     )
