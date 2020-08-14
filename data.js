@@ -229,5 +229,5 @@ const dataDashBoard = {
     }
 }
 
-module.exports = dataBlog
-module.exports = dataDashBoard
+exports.dataBlog = dataBlog
+exports.dataDashboard = dataDashBoard

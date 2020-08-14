@@ -27,6 +27,7 @@ export class BlogPage extends React.Component {
         fetch('/ping')
             .then(res => res.json())
             .then(res => {
+                console.log(res)
                 this.setState({
                     apiResponse: res
                 })
@@ -64,12 +65,12 @@ export class BlogPage extends React.Component {
                         <h2>Student Experiences</h2>
                         <Row className="mx-auto container justify-content-center">
                             {studentBlog.map((item, index) => (
-                                <Col key={index} md={5} className="mb-3">
+                                <Col key={index} md={5} className="my-3">
                                     <Card className="h-100">
                                         <Card.Img variant="top" src={process.env.PUBLIC_URL + item.image} alt="quiz" />
                                         <h4 className="p-3">{item.title}</h4>
                                         <p className="px-3 mb-auto">{item.content}</p>
-                                        <Button className="align-self-start mx-3 mb-3">
+                                        <Button className="align-self-start mx-3 my-3">
                                             <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to={item.link}>Read More</Link>
                                         </Button>
                                     </Card>
@@ -81,12 +82,12 @@ export class BlogPage extends React.Component {
                     <h2>Expert Advice</h2>
                         <Row className="mx-auto container justify-content-center">
                             {expertBlog.map((item, index) => (
-                                <Col key={index} md={5} className="mb-3">
+                                <Col key={index} md={5} className="my-3">
                                     <Card className="h-100">
                                         <Card.Img variant="top" src={process.env.PUBLIC_URL + item.image} alt="quiz" />
                                         <h4 className="p-3">{item.title}</h4>
                                         <p className="px-3 mb-auto">{item.content}</p>
-                                        <Button className="align-self-start mx-3 mb-3">
+                                        <Button className="align-self-start mx-3 my-3">
                                             <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to={item.link}>Read More</Link>
                                         </Button>
                                     </Card>
