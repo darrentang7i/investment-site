@@ -1,15 +1,26 @@
 # Scotiabank Investigator
 
 ![Investigator](./public/logo.png)
-Format: ![Alt Text](url)
-
 
 Managing finances is one of the biggest challenges a university student will face. Research shows that 35% of students believe they can manage their finances after completing their education. When considering investing, studies conducted identified that only 43% of Millennials and Gen Zs are more likely to hold their savings in investments as opposed to cash. Scotiabank services youth aged 18 or older, we wanted to provide a one-stop shop that provides a collection of these resources bundled with an investing platform geared towards students.
 
 The result was Scotia iNVESTIGATOR. An all-encompassing digital platform accessible for students, providing a personalized experience and catered learning materials and resources.
 
-## Getting Started
+## About Our Project
 
+![Preview](./public/preview.png)
+
+We've created three main components to our project
+* Investigator Quiz  
+Used to help students and new investors learn more about themselves, benchmark where they start, and also set goals for their investing future
+* Investigator Dashboard
+A one-stop-shop interface that will link with Scotiabank's iTrade platform to facilitate in easy portfolio management. Based off of the results from our quiz, we will tailor learning resources and featured investment options to help users navigate thier own investment journey. 
+* Investigator Blog
+We believe that experience and sharing knowledge is key to growth. We wanted to provide a platform where users should share their investing experiences while also gaining access to expert takes on investing matters. 
+
+Our front-end site was created using React, with an express back-end to link our quiz to a dynamic dashboard. 
+
+Scotia iNVESTIGATOR will transform the way students, and potentially all novice investors, begin their investment journey and navigate their portfolios, allowing them to #Invest, Navigate, Investigate.#
 
 ## Available Scripts
 
