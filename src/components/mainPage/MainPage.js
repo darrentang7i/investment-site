@@ -15,7 +15,10 @@ export function MainPage() {
                 <Row className="mx-auto container">
                     <Col className="text-left">
                         <h1>Are you a student hoping to learn more about investing?</h1>
-                        <p>Create a student account today and get access to the latest business news, current stock market trends, free articles and courses, as well as build your own personalized portfolio!</p>
+                        <p>Create a student account today and complete an interactive quiz 
+                            to learn more about your investing preferences and instantly create your own personalized dashboard. 
+                            Check out articles and blogs from students and industry experts, 
+                            as well as access relevant learning material to begin your investing journey with Scotiabank!</p>
                     </Col>
                     <Col>
                         <img src='/main/graph-pic.svg'  alt="Invest Today!"></img>
