@@ -32,7 +32,8 @@ export class DashboardPage extends React.Component {
                     apiResponse: parseInt(res)
                 })
             })
-            .catch(err => console.log(err));
+            .catch(err => console.log(err)
+        );
     }
 
     render() {
