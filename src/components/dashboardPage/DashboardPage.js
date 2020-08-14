@@ -68,7 +68,9 @@ export class DashboardPage extends React.Component {
                         <Card className="p-4">
                             <h4>Practice Accounts</h4>
                             <p>Create an practice account with a fictional portfolio to build your investing skills and explore the various available options risk-free!</p>
-                            <Button className="btn btn-primary"> Open an Account</Button>
+                            <Button className="btn btn-primary"> 
+                                <a style={{ color: 'inherit', textDecoration: 'inherit' }} href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading/investment-types/open-a-practice-account.html">Open an Account</a>
+                            </Button>
                         </Card>
                     </Col>
                     <Col sm={9}>
