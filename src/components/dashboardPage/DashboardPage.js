@@ -103,7 +103,7 @@ export class DashboardPage extends React.Component {
                                 ]}
                             />
                         </Col>
-                        <p className="pt-2">Cash: $$$<br />Stocks: $$$<br />Mutual Funds: $$$</p>
+                        <p className="pt-2" >Cash: $$$<br />Stocks: $$$<br />Mutual Funds: $$$</p>
                     </Col>
                 </Row>
                 <Row className="m-4">
